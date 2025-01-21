@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/*
+===========================
+    Default
+===========================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+}
+a {
+  color: var(--white-color) !important;
+}
+a:hover {
+  color: var(--tru-color) !important;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section {
+  overflow: hidden;
+}
+
+/*
+===========================
+    Variable Define
+===========================
+*/
+:root {
+  --primary-color: #10bdef;
+  --secondary-color: #0a1d29;
+  --tru-color: #0b8eb6;
+  --ter-color: #112e42;
+  --white-color: #fff;
+}
+
+/*
+===========================
+    Custom CSS Design
+===========================
+*/
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--white-color);
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  color: var(--white-color);
+  padding-bottom: 1rem;
+}
+.custom-btn {
+  border: 0.2rem solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: var(--primary-color) !important;
+  transition: all 0.5s ease;
+}
+.custom-btn:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--white-color);
+  border: 0.2rem solid var(--white-color);
+}
+#top-banner,
+#my-journey,
+#contact-me {
+  background-color: var(--secondary-color);
+}
+#about-me,
+#my-skills {
+  background-color: var(--ter-color);
+}
+
+/*
+===========================
+    Navigation Top
+===========================
+*/
+#navigation .navbar {
+  background-color: var(--secondary-color);
+}
+#navigation .navbar-toggler {
+  border: none;
+}
+#navigation .navbar-toggler:focus {
+  outline: unset;
+  box-shadow: none;
+}
+#navigation .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+#navigation .navbar-nav li {
+  padding: 0px 10px;
+}
+#navigation .navbar-nav .nav-item a {
+  position: relative;
+}
+#navigation .navbar-nav .nav-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--tru-color);
+  transition: all 0.5s ease;
+  width: 0;
+  height: 5px;
+  border-radius: 5px;
+}
+#navigation .navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+#navigation .navbar-nav .nav-link.active {
+  color: var(--tru-color) !important;
+}
+
+/*
+===========================
+    Section 1 Top Banner
+===========================
+*/
+#top-banner {
+  width: 100%;
+}
+#top-banner h2 {
+  color: transparent;
+  -webkit-text-stroke: 0.7px var(--primary-color);
+}
+#top-banner .social-icons li {
+  padding: 0px 10px;
+}
+#top-banner .social-icons a {
+  border: 0.2rem solid var(--primary-color);
+  font-size: 1.5rem;
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  color: var(--primary-color) !important;
+}
+#top-banner .social-icons a:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--white-color);
+  border: 0.2rem solid var(--white-color);
+}
+
+/*
+===========================
+    Section 3 My Journey
+===========================
+*/
+#my-journey .content-box {
+  border-left: 0.2rem solid var(--primary-color);
+}
+#my-journey .journey-content {
+  position: relative;
+  padding-left: 1.4rem;
+}
+#my-journey .journey-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.85rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+#my-journey .journey-text {
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+#my-journey .journey-text::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--ter-color);
+  z-index: -1;
+  transition: all 0.5s;
+}
+#my-journey .journey-text:hover::after {
+  width: 100%;
+}
+#my-journey .journey-text a {
+  text-decoration: none;
+}
+
+/*
+===========================
+    Section 4 My Skills
+===========================
+*/
+#my-skills .skills {
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+#my-skills .skills::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  transition: all 0.5s;
+}
+#my-skills .skills:hover::after {
+  width: 100%;
+}
+#my-skills .skills .content {
+  display: flex;
+  justify-content: space-between;
+}
+#my-skills .progress {
+  background-color: transparent;
+  border: 3px solid var(--primary-color);
+  height: 25px;
+}
+#my-skills .progress-bar {
+  margin: 5px 5px;
+  height: 10px;
+  background-color: var(--primary-color);
+}
+
+/*
+===========================
+    Section 5 Contact Me
+===========================
+*/
+#contact-me .form-control {
+  background-color: transparent;
+  border: 3px solid var(--tru-color);
+  color: var(--white-color);
+}
+#contact-me ::placeholder {
+  color: var(--white-color);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Pages</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Styles -->
+    <style>
+      body {
+        font-family: Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="flex justify-center w-full min-h-screen bg-gradient-to-t from-[#ee9ca7] to-[#ffdde1]"
+  >
+    <main
+      class="flex flex-col items-center py-6 px-4 gap-y-6 sm:gap-y-8 w-full max-w-7xl min-h-screen"
+    >
+      <h1
+        class="text-3xl sm:text-4xl font-semibold text-zinc-700 text-center tracking-tight"
+      >
+        Landing Pages
+      </h1>
+      <!-- Projects Section -->
+      <section
+        id="projects-wrapper"
+        class="w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      ></section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+/*
+===========================
+    Media Screen
+===========================
+*/
+@media screen and (max-width: 1399px) {
+  /* ======= Clients Section ======= */
+  #clients img {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* ======= Clients Section ======= */
+  #clients img {
+    width: 65px;
+  }
+
+  /* ======= About Us Part 3 ======= */
+  #about-us-3 img {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* ======= Header Section ======= */
+  #header .navbar {
+    background-color: var(--primary-color);
+    text-align: center;
+  }
+
+  #header .cust-btn {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  /* ======= Banner Section ======= */
+  #banner {
+    text-align: center;
+    height: 100vh;
+  }
+
+  #banner ul {
+    justify-content: center;
+  }
+
+  #banner img {
+    width: 65%;
+  }
+
+  /* ======= Clients Section ======= */
+  #clients img {
+    width: 95px;
+  }
+
+  /* ======= About Us Part 2 ======= */
+  #about-us-2 img {
+    width: 80%;
+  }
+
+  /* ======= About Us Part 3 ======= */
+  #about-us-3 img {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* ======= Header Section ======= */
+  #header .cust-btn {
+    width: 60%;
+  }
+
+  /* ======= Banner Section ======= */
+  #banner .container {
+    padding-top: 132px;
+  }
+
+  #banner img {
+    width: 75%;
+  }
+
+  #banner h1 {
+    font-size: 1.75rem;
+  }
+
+  #banner p {
+    font-size: 1.2rem;
+  }
+
+  /* ======= Clients Section ======= */
+  #clients img {
+    width: 90px;
+  }
+
+  /* ======= About Us Part 2 ======= */
+  #about-us-2 img {
+    width: 100%;
+  }
+
+  /* ======= About Us Part 3 ======= */
+  #about-us-3 img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* ======= Custom CSS ======= */
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p,
+  li,
+  h6 {
+    font-size: 1rem;
+  }
+
+  /* ======= Banner Section ======= */
+  #banner .container {
+    padding-top: 92px;
+  }
+
+  #banner img {
+    width: 70%;
+  }
+
+  #banner h1 {
+    font-size: 1.7rem;
+  }
+
+  #banner p {
+    font-size: 1.1rem;
+  }
+
+  /* ======= Clients Section ======= */
+  #clients img {
+    width: 85px;
+  }
+
+  /* ======= Newsletter Section ======= */
+  #newsletter .form-control {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  /* ======= Banner Section ======= */
+  #banner img {
+    width: 80%;
+  }
+}
+
+/*
+===========================
+    Portfolio Setup
+===========================
+*/
+@media screen and (min-width: 768px) {
+  .porftolio-parent {
+    position: relative;
+    height: 1476.08px;
+  }
+
+  .portfolio-item {
+    position: absolute;
+  }
+
+  .portfolio-1 {
+    left: 0px;
+    top: 0px;
+  }
+
+  .portfolio-2 {
+    right: 0px;
+    top: 0px;
+  }
+
+  .portfolio-3 {
+    right: 0px;
+    top: 255px;
+  }
+
+  .portfolio-4 {
+    left: 0px;
+    top: 370px;
+  }
+
+  .portfolio-5 {
+    right: 0px;
+    top: 475px;
+  }
+
+  .portfolio-6 {
+    top: 620px;
+    left: 0px;
+  }
+
+  .portfolio-7 {
+    right: 0px;
+    top: 1005px;
+  }
+
+  .portfolio-8 {
+    left: 0px;
+    top: 1145px;
+  }
+
+  .portfolio-9 {
+    right: 0px;
+    top: 1250px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .porftolio-parent {
+    height: 900px;
+  }
+
+  .portfolio-2 {
+    left: 320px;
+  }
+
+  .portfolio-3 {
+    left: 640px;
+    top: 0px;
+  }
+
+  .portfolio-4 {
+    left: 640px;
+    top: 195px;
+  }
+
+  .portfolio-5 {
+    left: 320px;
+    top: 230px;
+  }
+
+  .portfolio-6 {
+    top: 330px;
+  }
+
+  .portfolio-7 {
+    left: 640px;
+    top: 420px;
+  }
+
+  .portfolio-8 {
+    left: 640px;
+    top: 640px;
+  }
+
+  .portfolio-9 {
+    left: 320px;
+    top: 700px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .porftolio-parent {
+    height: 1070px;
+  }
+
+  .portfolio-2 {
+    left: 380px;
+  }
+
+  .portfolio-3 {
+    left: 760px;
+  }
+
+  .portfolio-4 {
+    left: 760px;
+    top: 230px;
+  }
+
+  .portfolio-5 {
+    left: 380px;
+    top: 270px;
+  }
+
+  .portfolio-6 {
+    top: 390px;
+  }
+
+  .portfolio-7 {
+    left: 760px;
+    top: 495px;
+  }
+
+  .portfolio-8 {
+    left: 760px;
+    top: 755px;
+  }
+
+  .portfolio-9 {
+    left: 380px;
+    top: 830px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .porftolio-parent {
+    height: 1240px;
+  }
+
+  .portfolio-2 {
+    left: 440px;
+  }
+
+  .portfolio-3 {
+    left: 880px;
+  }
+
+  .portfolio-4 {
+    left: 880px;
+    top: 265px;
+  }
+
+  .portfolio-5 {
+    left: 440px;
+    top: 310px;
+  }
+
+  .portfolio-6 {
+    top: 450px;
+  }
+
+  .portfolio-7 {
+    left: 880px;
+    top: 570px;
+  }
+
+  .portfolio-8 {
+    left: 880px;
+    top: 870px;
+  }
+
+  .portfolio-9 {
+    left: 440px;
+    top: 960px;
+  }
+}

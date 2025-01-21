@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+/*
+===========================
+    Default
+===========================
+*/
+*,
+*::after,
+*::before,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color) !important;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+/*
+===========================
+    Variable Define
+===========================
+*/
+:root {
+  --primary-color: #37517e;
+  --secondary-color: #6ac1e9;
+  --tertiary-color: #f3f5fa;
+  --text-color: #777777;
+  --text-color-second: #444444;
+  --white-color: #fff;
+  --black-color: #000;
+  --primary-font: "Josefin Sans", sans-serif;
+}
+
+/*
+===========================
+    Custom CSS
+===========================
+*/
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+
+h2,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
+
+h1 {
+  color: var(--white-color);
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: var(--primary-font);
+}
+
+h5 {
+  margin: 0;
+}
+
+h6,
+p,
+li {
+  font-size: 1.03rem;
+}
+
+p,
+li {
+  color: var(--text-color-second);
+}
+
+.cust-btn,
+.cust-btn-2 {
+  border: 2px solid var(--secondary-color);
+  border-radius: 100px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.cust-btn {
+  color: var(--secondary-color) !important;
+  background-color: transparent;
+}
+
+.cust-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color) !important;
+}
+
+.cust-btn-2 {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  padding: 11px 22px;
+  font-family: var(--primary-font);
+}
+
+.cust-btn-2:hover {
+  background-color: transparent;
+}
+
+#banner,
+#copyright {
+  background-color: var(--primary-color);
+}
+
+#clients,
+#about-us-2,
+#services,
+#team,
+#faq,
+#newsletter {
+  background-color: var(--tertiary-color);
+}
+
+:is(#about-us, #services, #portfolio, #team, #pricing, #faq, #contact) h2 {
+  position: relative;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+:is(#about-us, #services, #portfolio, #team, #pricing, #faq, #contact)
+  h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+:is(#about-us, #services, #portfolio, #team, #pricing, #faq, #contact)
+  h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+#accordion,
+#accordion-2 {
+  --bs-accordion-border-color: unset;
+  --bs-accordion-btn-icon-width: 0.9rem;
+  --bs-accordion-btn-focus-box-shadow: unset;
+}
+
+:is(#accordion, #accordion-2) .accordion-item {
+  margin-bottom: 30px;
+}
+
+:is(#accordion, #accordion-2) .accordion-item .accordion-header {
+  margin-bottom: -20px;
+}
+
+:is(#accordion, #accordion-2) .accordion-item .accordion-header h5 {
+  margin: 0;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+:is(#accordion, #accordion-2) .accordion-item .accordion-header span {
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding-left: 8px;
+  color: var(--black-color);
+  opacity: 0.9;
+}
+
+#accordion-2 .accordion-item .accordion-header span {
+  font-size: 1.1rem;
+}
+
+:is(#accordion, #accordion-2) .accordion-item .accordion-header span:hover {
+  color: var(--secondary-color);
+}
+
+:is(#accordion, #accordion-2) .accordion-button:not(.collapsed) {
+  background-color: var(--white-color);
+}
+
+/*
+===========================
+    Header
+===========================
+*/
+#header .navbar.scroll-on {
+  background: rgba(40, 58, 90, 0.9);
+  transition: all 0.5s ease;
+}
+
+#header .navbar-toggler {
+  border: none;
+}
+
+#header .navbar-toggler:focus {
+  box-shadow: unset;
+  outline: unset;
+}
+
+#header .fa-stream {
+  color: var(--white-color);
+}
+
+#header .navbar-brand h3 {
+  letter-spacing: 0.2rem;
+}
+
+#header li {
+  padding: 0px 15px;
+}
+
+#header .nav-link.active {
+  color: var(--secondary-color) !important;
+}
+
+#header .cust-btn {
+  color: var(--white-color) !important;
+}
+
+/*
+===========================
+    Banner
+===========================
+*/
+#banner {
+  width: 100%;
+  height: 80vh;
+}
+
+#banner .container {
+  padding-top: 72px;
+}
+
+#banner p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#banner .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*
+===========================
+    Clients
+===========================
+*/
+#clients {
+  padding: 2rem 0px;
+  position: relative;
+}
+
+#clients img {
+  width: 90px;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+#clients img:hover {
+  filter: unset;
+  transform: scale(1.1);
+}
+
+/*
+===========================
+    About Us
+===========================
+*/
+#about-us .fa-check-double {
+  color: var(--secondary-color);
+}
+
+#about-us .cust-btn {
+  border-radius: 5px !important;
+  letter-spacing: 1px;
+}
+
+/*
+===========================
+    About Us Part 2
+===========================
+*/
+#about-us-2 span {
+  font-weight: normal;
+}
+
+#about-us-2 p {
+  opacity: 0.9;
+}
+
+/*
+===========================
+    About Us Part 3
+===========================
+*/
+#about-us-3 .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-us-3 .progress {
+  border-radius: unset;
+  height: 0.7rem;
+}
+
+#about-us-3 .progress-bar {
+  background-color: rgb(55, 81, 126, 0.9);
+}
+
+/*
+===========================
+    Services
+===========================
+*/
+#services .box {
+  background-color: var(--white-color);
+  padding: 30px;
+  min-height: 236px;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+#services .box:hover {
+  transform: translateY(-15px);
+}
+
+#services .box i {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+:is(#services .box:hover) :is(.box h4) {
+  color: var(--secondary-color);
+  transition: all 0.5s ease;
+}
+
+#services .box p {
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/*
+===========================
+    CTA
+===========================
+*/
+#cta {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url("../img/cta-bg.jpg") fixed center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+#cta :is(h2, p) {
+  color: var(--white-color);
+}
+
+#cta .cust-btn {
+  font-family: var(--primary-font);
+  padding: 10px 30px;
+  border-color: var(--white-color);
+  color: var(--white-color) !important;
+}
+
+#cta .cust-btn:hover {
+  border-color: var(--secondary-color);
+}
+
+/*
+===========================
+    Portfolio
+===========================
+*/
+#portfolio .portfolio-item {
+  transition: all 0.5s ease;
+}
+
+#portfolio .portfolio-img {
+  overflow: hidden;
+}
+
+#portfolio .portfolio-img img {
+  transition: all 0.5s ease;
+}
+
+#portfolio .portfolio-img img:hover {
+  transform: scale(1.1);
+}
+
+#portfolio .portfolio-content-box {
+  position: relative;
+}
+
+#portfolio .portfolio-content {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+  background-color: rgba(40, 58, 90, 0.8);
+  padding: 20px 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#portfolio .portfolio-content h5,
+i {
+  color: var(--white-color);
+}
+
+#portfolio .portfolio-content .portfolio-icons i {
+  margin: 0px 5px;
+}
+
+#portfolio .portfolio-item:hover :is(.portfolio-content) {
+  opacity: 1;
+}
+
+/*
+===========================
+    Team
+===========================
+*/
+#team .team-box {
+  background-color: var(--white-color);
+  padding: 30px;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+#team .team-box:hover {
+  transform: translateY(-10px);
+}
+
+#team .team-img {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+#team .team-img img {
+  transition: all 0.3s;
+}
+
+#team .team-content p {
+  position: relative;
+}
+
+#team .team-content p::after {
+  position: absolute;
+  content: "";
+  bottom: -9px;
+  left: 3px;
+  background-color: var(--secondary-color);
+  width: 55px;
+  height: 1.5px;
+}
+
+#team .team-content span {
+  color: var(--text-color-second);
+}
+
+#team .team-content .social-icons-team i {
+  color: var(--primary-color);
+  margin: 0px 10px;
+}
+
+/*
+===========================
+   Pricing
+===========================
+*/
+#pricing .plan-box {
+  background-color: var(--white-color);
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 5px;
+  height: 100%;
+  transition: all 0.5s;
+  border-top: 4px solid #fff;
+}
+
+#pricing .plan-box:hover {
+  transform: translateY(-10px);
+}
+
+#pricing .plan-box h3 {
+  margin: 0;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  padding: 10px 0px;
+  font-weight: normal;
+}
+
+#pricing .plan-box sup {
+  font-size: 1.9rem;
+}
+
+#pricing .plan-box p {
+  color: var(--secondary-color);
+  margin-top: -15px;
+}
+
+#pricing .plan-box .pricing-list li {
+  opacity: 0.9;
+  color: var(--text-color);
+  line-height: 2.3rem;
+}
+
+#pricing .plan-box .pricing-list i {
+  padding-right: 10px;
+  color: green;
+}
+
+#pricing .plan-box .cust-btn {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  padding: 11px 22px;
+}
+
+#pricing .business-plan {
+  border-top-color: var(--secondary-color);
+}
+
+#pricing .business-plan .cust-btn {
+  background-color: var(--secondary-color);
+  color: var(--white-color) !important;
+}
+
+/*
+===========================
+   Contact
+===========================
+*/
+#contact .box-left,
+.form-box {
+  border-top: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+#contact .contact-content-box {
+  margin: 25px 20px;
+  display: flex;
+}
+
+#contact .contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+}
+
+#contact .contact-icon i {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+
+#contact .contact-content {
+  padding-left: 10px;
+}
+
+#contact .contact-content span {
+  color: #6182ba;
+}
+
+#contact .map {
+  margin: 20px 30px;
+}
+
+#contact .mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 250px;
+}
+
+#contact .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 250px;
+}
+
+#contact .gmap_iframe {
+  width: 100% !important;
+  height: 250px !important;
+}
+
+#contact form {
+  margin: 0px 10px;
+}
+
+:is(#contact, #newsletter) .form-control:focus {
+  box-shadow: unset;
+}
+
+:is(#contact, #newsletter) .cust-btn-2:hover {
+  background-color: #47b2e4;
+}
+
+/*
+===========================
+    Newsletter
+===========================
+*/
+#newsletter h5 {
+  font-size: 24px;
+}
+
+#newsletter .form-control {
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.5s ease;
+}
+
+/*
+===========================
+    Footer
+===========================
+*/
+.footer-address h3 {
+  color: var(--primary-color);
+}
+
+.footer-address h6 {
+  color: var(--text-color-second);
+}
+
+.footer-address span {
+  color: #5e5e5e;
+  font-weight: normal;
+}
+
+:is(.footer-links-1, .footer-links-2) i {
+  color: var(--secondary-color);
+  padding-right: 7px;
+}
+
+:is(.footer-links-1, .footer-links-2) a {
+  color: #5e5e5e !important;
+}
+
+:is(.footer-links-1, .footer-links-2) li {
+  line-height: 2.3rem;
+}
+
+.footer-social a {
+  color: #47b2e4 !important;
+  margin: 0px 10px;
+  font-size: 1.5rem;
+}
+
+/*
+===========================
+    Copyright
+===========================
+*/
+#copyright {
+  padding: 30px 0px;
+}
+
+#copyright p {
+  color: var(--white-color);
+  margin: 0;
+}
+
+#copyright a {
+  color: var(--secondary-color) !important;
+}

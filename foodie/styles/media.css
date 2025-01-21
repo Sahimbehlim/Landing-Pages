@@ -1,0 +1,114 @@
+@media screen and (max-width: 1200px) {
+  /* Custom CSS Design */
+  .a-link {
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+
+  /* Navigation Menu Top */
+  #navigation img {
+    width: 160px;
+    height: 80px;
+  }
+  #navigation .navbar-nav {
+    font-size: 0.9rem;
+  }
+
+  /* Section 1 Top Banner */
+  #top-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  #top-banner p {
+    padding-bottom: 8px;
+  }
+
+  /* Section 2 Data */
+  #data p {
+    font-size: 0.8rem;
+  }
+
+  /* Section 3 About Us > Part 2 */
+  #aboutus-part-2 .bi-check-lg {
+    font-size: 0.9rem;
+  }
+
+  /* Section 5 Explore > Explore Cards */
+  #explore-cards h5 {
+    font-size: 1.3rem;
+  }
+
+  /* Section 6 Testimonials */
+  #testimonials img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Section 7 FAQ */
+  #faq h4 {
+    font-size: 15px;
+  }
+
+  /* Section 9 Footer > Footer Part 2 */
+  #footer-part-2 a {
+    font-size: 0.9rem;
+  }
+  #footer-part-2 h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Custom CSS Design */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Navigation Menu Top */
+  #navigation img {
+    width: 140px;
+    height: 70px;
+  }
+
+  /* Section 1 Top Banner */
+  #top-banner h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  #top-banner p {
+    padding-bottom: 6px;
+  }
+
+  /* Section 2 Data */
+  #data h2 {
+    font-size: 1.7rem;
+  }
+  #data p {
+    font-size: 0.7rem;
+  }
+
+  /* Section 5 Explore > Explore Cards */
+  #explore-cards h4 {
+    font-size: 15px;
+  }
+  #explore-cards h5 {
+    font-size: 1.1rem;
+  }
+
+  /* Section 6 Testimonials */
+  #testimonials h2 {
+    padding: 50px 0px;
+  }
+  #testimonials img {
+    width: 80px;
+    height: 80px;
+  }
+  #testimonials h4 {
+    font-size: 15px;
+  }
+}
