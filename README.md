@@ -1,6 +1,6 @@
 # Landing Pages
 
-This repository contains a collection of beautifully crafted landing pages using **HTML**, **CSS**, and **JavaScript**.
+This repository contains a collection of beautifully crafted landing pages using HTML, CSS, and JavaScript.
 
 ## Features
 
